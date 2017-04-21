@@ -1,6 +1,6 @@
 //
 //  SYTypeButtonView.h
-//  HKCloud
+//  zhangshaoyu
 //
 //  Created by zhangshaoyu on 15/11/16.
 //  Copyright © 2015年 zhangshaoyu. All rights reserved.
@@ -9,16 +9,24 @@
 #import <UIKit/UIKit.h>
 
 /// 默认行高
-static CGFloat const heightTypeButtonView = 40.0;
+#define heightTypeButtonView (40.0)
 
-static NSString *const keyImageNormal = @"keyImageNormal";
-static NSString *const keyImageSelected = @"keyImageSelected";
+static NSString *const keyImageNormal         = @"keyImageNormal";
+static NSString *const keyImageSelected       = @"keyImageSelected";
 static NSString *const keyImageSelectedDouble = @"keyImageSelectedDouble";
 
 @interface SYTypeButtonView : UIView
 
 /// 实例化
 - (instancetype)initWithFrame:(CGRect)frame view:(UIView *)view;
+
+/// 是否显示切换滚动条（默认不显示。设置标题前设置）
+@property (nonatomic, assign) BOOL showScrollLine;
+
+/// 字体大小（默认12。设置标题后设置）
+@property (nonatomic, strong) UIFont *titleFont;
+/// 选中后字体大小（默认12。设置标题后设置）
+@property (nonatomic, strong) UIFont *titleFontSelected;
 
 /// 按钮标题数组
 @property (nonatomic, strong) NSArray *titles;
@@ -37,5 +45,11 @@ static NSString *const keyImageSelectedDouble = @"keyImageSelectedDouble";
 
 /// 回调响应（默认升序）
 @property (nonatomic, copy) void (^buttonClick)(NSInteger index, BOOL isDescending);
+
+/// 重置按钮标题
+- (void)setTitleButton:(NSString *)title index:(NSInteger)index;
+
+/// 默认选中按钮
+@property (nonatomic, assign) NSInteger selectedIndex;
 
 @end

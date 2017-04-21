@@ -21,3 +21,12 @@ buttonView.imageTypeArray = @[[NSDictionary dictionary],
 [NSDictionary dictionaryWithObjectsAndKeys:[UIImage imageNamed:@"priceImage_normal"], keyImageNormal, [UIImage imageNamed:@"priceImage_down"], keyImageSelected, [UIImage imageNamed:@"priceImage_up"], keyImageSelectedDouble, nil]];
 
 ~~~
+
+# 修复完善
+## 20170421
+* SYTypeButton添加属性及修改默认选项逻辑
+  * 默认选项逻辑：只处理选项状态，不响应事件交互。
+~~~ javascript
+/// 选中后字体大小（默认12。设置标题后设置）
+@property (nonatomic, strong) UIFont *titleFontSelected;
+~~~
