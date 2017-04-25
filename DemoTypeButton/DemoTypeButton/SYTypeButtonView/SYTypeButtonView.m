@@ -171,6 +171,12 @@ static NSInteger const tagButton = 1000;
 
 #pragma mark - setter
 
+- (void)setShowScrollLine:(BOOL)showScrollLine
+{
+    _showScrollLine = showScrollLine;
+    self.lineView.hidden = !_showScrollLine;
+}
+
 - (void)setTitles:(NSArray *)titles
 {
     _titles = titles;

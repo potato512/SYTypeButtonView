@@ -23,6 +23,10 @@ buttonView.imageTypeArray = @[[NSDictionary dictionary],
 ~~~
 
 # 修复完善
+## 20170424
+* SYTypeButton修改bug
+  * 导航动画线初始化时显示bug
+
 ## 20170421
 * SYTypeButton添加属性及修改默认选项逻辑
   * 默认选项逻辑：只处理选项状态，不响应事件交互。
