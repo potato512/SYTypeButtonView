@@ -1,12 +1,15 @@
 # SYTypeButtonView
 多样式类型按钮视图
 
-##使用说明
+## 使用说明
 
 ![gif](SYTypeButtonView.gif)
 
 ~~~ javaacript
+// 头文件
+#import "SYTypeButtonView.h"
 
+// 实例化
 SYTypeButtonView *buttonView = [[SYTypeButtonView alloc] initWithFrame:CGRectMake(0.0, 0.0, CGRectGetWidth(self.view.bounds), heightTypeButtonView) view:self.view];
 buttonView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.3];
 buttonView.buttonClick = ^(NSInteger index, BOOL isDescending){
@@ -22,14 +25,19 @@ buttonView.imageTypeArray = @[[NSDictionary dictionary],
 
 ~~~
 
-# 修复完善
-## 20170424
-* SYTypeButton修改bug
-  * 导航动画线初始化时显示bug
+# 修改说明
+* 20171017
+  * 版本号：1.0.1
+  * 源码与示例分离
 
-## 20170421
-* SYTypeButton添加属性及修改默认选项逻辑
-  * 默认选项逻辑：只处理选项状态，不响应事件交互。
+* 20170424
+  * SYTypeButton修改bug
+    * 导航动画线初始化时显示bug
+
+* 20170421
+  * SYTypeButton添加属性及修改默认选项逻辑
+    * 默认选项逻辑：只处理选项状态，不响应事件交互。
+    
 ~~~ javascript
 /// 选中后字体大小（默认12。设置标题后设置）
 @property (nonatomic, strong) UIFont *titleFontSelected;

@@ -15,13 +15,13 @@
 		A71ADEA11C29486F0075AB73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71ADE9F1C29486F0075AB73 /* LaunchScreen.storyboard */; };
 		A71ADEAC1C29486F0075AB73 /* DemoTypeButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A71ADEAB1C29486F0075AB73 /* DemoTypeButtonTests.m */; };
 		A71ADEB71C29486F0075AB73 /* DemoTypeButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A71ADEB61C29486F0075AB73 /* DemoTypeButtonUITests.m */; };
-		A71ADEC91C294A750075AB73 /* SYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A71ADEC61C294A750075AB73 /* SYButton.m */; };
-		A71ADECA1C294A750075AB73 /* SYTypeButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = A71ADEC81C294A750075AB73 /* SYTypeButtonView.m */; };
-		A71ADED01C294C130075AB73 /* accessoryArrow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A71ADECB1C294C130075AB73 /* accessoryArrow_down@2x.png */; };
-		A71ADED11C294C130075AB73 /* accessoryArrow_downSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A71ADECC1C294C130075AB73 /* accessoryArrow_downSelected@2x.png */; };
-		A71ADED21C294C130075AB73 /* priceImage_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A71ADECD1C294C130075AB73 /* priceImage_down@2x.png */; };
-		A71ADED31C294C130075AB73 /* priceImage_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A71ADECE1C294C130075AB73 /* priceImage_normal@2x.png */; };
-		A71ADED41C294C130075AB73 /* priceImage_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A71ADECF1C294C130075AB73 /* priceImage_up@2x.png */; };
+		A7CABE651F95F7B800A68017 /* accessoryArrow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CABE601F95F7B800A68017 /* accessoryArrow_down@2x.png */; };
+		A7CABE661F95F7B800A68017 /* accessoryArrow_downSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CABE611F95F7B800A68017 /* accessoryArrow_downSelected@2x.png */; };
+		A7CABE671F95F7B800A68017 /* priceImage_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CABE621F95F7B800A68017 /* priceImage_down@2x.png */; };
+		A7CABE681F95F7B800A68017 /* priceImage_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CABE631F95F7B800A68017 /* priceImage_normal@2x.png */; };
+		A7CABE691F95F7B800A68017 /* priceImage_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CABE641F95F7B800A68017 /* priceImage_up@2x.png */; };
+		A7CABE6E1F95F8DE00A68017 /* SYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CABE6B1F95F8DE00A68017 /* SYButton.m */; };
+		A7CABE6F1F95F8DE00A68017 /* SYTypeButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CABE6D1F95F8DE00A68017 /* SYTypeButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,15 +58,15 @@
 		A71ADEB21C29486F0075AB73 /* DemoTypeButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTypeButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71ADEB61C29486F0075AB73 /* DemoTypeButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTypeButtonUITests.m; sourceTree = "<group>"; };
 		A71ADEB81C29486F0075AB73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A71ADEC51C294A750075AB73 /* SYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYButton.h; sourceTree = "<group>"; };
-		A71ADEC61C294A750075AB73 /* SYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYButton.m; sourceTree = "<group>"; };
-		A71ADEC71C294A750075AB73 /* SYTypeButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTypeButtonView.h; sourceTree = "<group>"; };
-		A71ADEC81C294A750075AB73 /* SYTypeButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTypeButtonView.m; sourceTree = "<group>"; };
-		A71ADECB1C294C130075AB73 /* accessoryArrow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessoryArrow_down@2x.png"; sourceTree = "<group>"; };
-		A71ADECC1C294C130075AB73 /* accessoryArrow_downSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessoryArrow_downSelected@2x.png"; sourceTree = "<group>"; };
-		A71ADECD1C294C130075AB73 /* priceImage_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "priceImage_down@2x.png"; sourceTree = "<group>"; };
-		A71ADECE1C294C130075AB73 /* priceImage_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "priceImage_normal@2x.png"; sourceTree = "<group>"; };
-		A71ADECF1C294C130075AB73 /* priceImage_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "priceImage_up@2x.png"; sourceTree = "<group>"; };
+		A7CABE601F95F7B800A68017 /* accessoryArrow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessoryArrow_down@2x.png"; sourceTree = "<group>"; };
+		A7CABE611F95F7B800A68017 /* accessoryArrow_downSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessoryArrow_downSelected@2x.png"; sourceTree = "<group>"; };
+		A7CABE621F95F7B800A68017 /* priceImage_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "priceImage_down@2x.png"; sourceTree = "<group>"; };
+		A7CABE631F95F7B800A68017 /* priceImage_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "priceImage_normal@2x.png"; sourceTree = "<group>"; };
+		A7CABE641F95F7B800A68017 /* priceImage_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "priceImage_up@2x.png"; sourceTree = "<group>"; };
+		A7CABE6A1F95F8DE00A68017 /* SYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYButton.h; sourceTree = "<group>"; };
+		A7CABE6B1F95F8DE00A68017 /* SYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYButton.m; sourceTree = "<group>"; };
+		A7CABE6C1F95F8DE00A68017 /* SYTypeButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTypeButtonView.h; sourceTree = "<group>"; };
+		A7CABE6D1F95F8DE00A68017 /* SYTypeButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTypeButtonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,16 +121,8 @@
 				A71ADE951C29486F0075AB73 /* AppDelegate.m */,
 				A71ADE971C29486F0075AB73 /* ViewController.h */,
 				A71ADE981C29486F0075AB73 /* ViewController.m */,
-				A71ADECB1C294C130075AB73 /* accessoryArrow_down@2x.png */,
-				A71ADECC1C294C130075AB73 /* accessoryArrow_downSelected@2x.png */,
-				A71ADECD1C294C130075AB73 /* priceImage_down@2x.png */,
-				A71ADECE1C294C130075AB73 /* priceImage_normal@2x.png */,
-				A71ADECF1C294C130075AB73 /* priceImage_up@2x.png */,
-				A71ADEC41C294A090075AB73 /* SYTypeButtonView */,
-				A71ADE9A1C29486F0075AB73 /* Main.storyboard */,
-				A71ADE9D1C29486F0075AB73 /* Assets.xcassets */,
-				A71ADE9F1C29486F0075AB73 /* LaunchScreen.storyboard */,
-				A71ADEA21C29486F0075AB73 /* Info.plist */,
+				A7CABE5F1F95F7B800A68017 /* images */,
+				A7CABE5E1F95F7B300A68017 /* SYTypeButtonView */,
 				A71ADE911C29486F0075AB73 /* Supporting Files */,
 			);
 			path = DemoTypeButton;
@@ -139,6 +131,10 @@
 		A71ADE911C29486F0075AB73 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A71ADE9A1C29486F0075AB73 /* Main.storyboard */,
+				A71ADE9D1C29486F0075AB73 /* Assets.xcassets */,
+				A71ADE9F1C29486F0075AB73 /* LaunchScreen.storyboard */,
+				A71ADEA21C29486F0075AB73 /* Info.plist */,
 				A71ADE921C29486F0075AB73 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -162,15 +158,27 @@
 			path = DemoTypeButtonUITests;
 			sourceTree = "<group>";
 		};
-		A71ADEC41C294A090075AB73 /* SYTypeButtonView */ = {
+		A7CABE5E1F95F7B300A68017 /* SYTypeButtonView */ = {
 			isa = PBXGroup;
 			children = (
-				A71ADEC51C294A750075AB73 /* SYButton.h */,
-				A71ADEC61C294A750075AB73 /* SYButton.m */,
-				A71ADEC71C294A750075AB73 /* SYTypeButtonView.h */,
-				A71ADEC81C294A750075AB73 /* SYTypeButtonView.m */,
+				A7CABE6A1F95F8DE00A68017 /* SYButton.h */,
+				A7CABE6B1F95F8DE00A68017 /* SYButton.m */,
+				A7CABE6C1F95F8DE00A68017 /* SYTypeButtonView.h */,
+				A7CABE6D1F95F8DE00A68017 /* SYTypeButtonView.m */,
 			);
 			path = SYTypeButtonView;
+			sourceTree = "<group>";
+		};
+		A7CABE5F1F95F7B800A68017 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A7CABE601F95F7B800A68017 /* accessoryArrow_down@2x.png */,
+				A7CABE611F95F7B800A68017 /* accessoryArrow_downSelected@2x.png */,
+				A7CABE621F95F7B800A68017 /* priceImage_down@2x.png */,
+				A7CABE631F95F7B800A68017 /* priceImage_normal@2x.png */,
+				A7CABE641F95F7B800A68017 /* priceImage_up@2x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,13 +285,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A71ADEA11C29486F0075AB73 /* LaunchScreen.storyboard in Resources */,
-				A71ADED01C294C130075AB73 /* accessoryArrow_down@2x.png in Resources */,
-				A71ADED21C294C130075AB73 /* priceImage_down@2x.png in Resources */,
-				A71ADED41C294C130075AB73 /* priceImage_up@2x.png in Resources */,
+				A7CABE651F95F7B800A68017 /* accessoryArrow_down@2x.png in Resources */,
+				A7CABE671F95F7B800A68017 /* priceImage_down@2x.png in Resources */,
+				A7CABE691F95F7B800A68017 /* priceImage_up@2x.png in Resources */,
 				A71ADE9E1C29486F0075AB73 /* Assets.xcassets in Resources */,
 				A71ADE9C1C29486F0075AB73 /* Main.storyboard in Resources */,
-				A71ADED31C294C130075AB73 /* priceImage_normal@2x.png in Resources */,
-				A71ADED11C294C130075AB73 /* accessoryArrow_downSelected@2x.png in Resources */,
+				A7CABE681F95F7B800A68017 /* priceImage_normal@2x.png in Resources */,
+				A7CABE661F95F7B800A68017 /* accessoryArrow_downSelected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,9 +316,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A71ADECA1C294A750075AB73 /* SYTypeButtonView.m in Sources */,
+				A7CABE6F1F95F8DE00A68017 /* SYTypeButtonView.m in Sources */,
 				A71ADE991C29486F0075AB73 /* ViewController.m in Sources */,
-				A71ADEC91C294A750075AB73 /* SYButton.m in Sources */,
+				A7CABE6E1F95F8DE00A68017 /* SYButton.m in Sources */,
 				A71ADE961C29486F0075AB73 /* AppDelegate.m in Sources */,
 				A71ADE931C29486F0075AB73 /* main.m in Sources */,
 			);
@@ -538,6 +546,7 @@
 				A71ADEBD1C29486F0075AB73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A71ADEBE1C29486F0075AB73 /* Build configuration list for PBXNativeTarget "DemoTypeButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +555,7 @@
 				A71ADEC01C29486F0075AB73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A71ADEC11C29486F0075AB73 /* Build configuration list for PBXNativeTarget "DemoTypeButtonUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +564,7 @@
 				A71ADEC31C29486F0075AB73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
