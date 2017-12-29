@@ -23,6 +23,16 @@ buttonView.imageTypeArray = @[[NSDictionary dictionary],
 [NSDictionary dictionaryWithObjectsAndKeys:[UIImage imageNamed:@"accessoryArrow_down"], keyImageNormal, [UIImage imageNamed:@"accessoryArrow_downSelected"], keyImageSelected, nil],
 [NSDictionary dictionaryWithObjectsAndKeys:[UIImage imageNamed:@"priceImage_normal"], keyImageNormal, [UIImage imageNamed:@"priceImage_down"], keyImageSelected, [UIImage imageNamed:@"priceImage_up"], keyImageSelectedDouble, nil]];
 
+// 显示滚动条
+buttonView.showScrollLine = YES;
+
+// 设置默认选中按钮
+buttonView.selectedIndex = 2;
+
+// 设置默认选中按钮及其状态
+[buttonView setTypeButton:NO index:2];
+
+
 ~~~
 
 # 修改说明
