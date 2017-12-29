@@ -46,10 +46,13 @@ static NSString *const keyImageSelectedDouble = @"keyImageSelectedDouble";
 /// 回调响应（默认升序）
 @property (nonatomic, copy) void (^buttonClick)(NSInteger index, BOOL isDescending);
 
+/// 默认选中按钮（默认第一个按钮被选中，如果是多状态选择时，必须设置，否则无法进行二项选择；-1时表示取消选中状态）
+@property (nonatomic, assign) NSInteger selectedIndex;
+
+
 /// 重置按钮标题
 - (void)setTitleButton:(NSString *)title index:(NSInteger)index;
-
-/// 默认选中按钮
-@property (nonatomic, assign) NSInteger selectedIndex;
+/// 设置某个按钮升序或降序状态
+- (void)setTypeButton:(BOOL)isDescending index:(NSInteger)index;
 
 @end

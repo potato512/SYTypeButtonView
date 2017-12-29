@@ -15,6 +15,7 @@
 		A71ADEA11C29486F0075AB73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71ADE9F1C29486F0075AB73 /* LaunchScreen.storyboard */; };
 		A71ADEAC1C29486F0075AB73 /* DemoTypeButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A71ADEAB1C29486F0075AB73 /* DemoTypeButtonTests.m */; };
 		A71ADEB71C29486F0075AB73 /* DemoTypeButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A71ADEB61C29486F0075AB73 /* DemoTypeButtonUITests.m */; };
+		A76762871FF5DF590019F508 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76762861FF5DF590019F508 /* RootViewController.m */; };
 		A7CABE651F95F7B800A68017 /* accessoryArrow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CABE601F95F7B800A68017 /* accessoryArrow_down@2x.png */; };
 		A7CABE661F95F7B800A68017 /* accessoryArrow_downSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CABE611F95F7B800A68017 /* accessoryArrow_downSelected@2x.png */; };
 		A7CABE671F95F7B800A68017 /* priceImage_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CABE621F95F7B800A68017 /* priceImage_down@2x.png */; };
@@ -58,6 +59,8 @@
 		A71ADEB21C29486F0075AB73 /* DemoTypeButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTypeButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71ADEB61C29486F0075AB73 /* DemoTypeButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTypeButtonUITests.m; sourceTree = "<group>"; };
 		A71ADEB81C29486F0075AB73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76762851FF5DF590019F508 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		A76762861FF5DF590019F508 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		A7CABE601F95F7B800A68017 /* accessoryArrow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessoryArrow_down@2x.png"; sourceTree = "<group>"; };
 		A7CABE611F95F7B800A68017 /* accessoryArrow_downSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessoryArrow_downSelected@2x.png"; sourceTree = "<group>"; };
 		A7CABE621F95F7B800A68017 /* priceImage_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "priceImage_down@2x.png"; sourceTree = "<group>"; };
@@ -119,6 +122,8 @@
 			children = (
 				A71ADE941C29486F0075AB73 /* AppDelegate.h */,
 				A71ADE951C29486F0075AB73 /* AppDelegate.m */,
+				A76762851FF5DF590019F508 /* RootViewController.h */,
+				A76762861FF5DF590019F508 /* RootViewController.m */,
 				A71ADE971C29486F0075AB73 /* ViewController.h */,
 				A71ADE981C29486F0075AB73 /* ViewController.m */,
 				A7CABE5F1F95F7B800A68017 /* images */,
@@ -318,6 +323,7 @@
 			files = (
 				A7CABE6F1F95F8DE00A68017 /* SYTypeButtonView.m in Sources */,
 				A71ADE991C29486F0075AB73 /* ViewController.m in Sources */,
+				A76762871FF5DF590019F508 /* RootViewController.m in Sources */,
 				A7CABE6E1F95F8DE00A68017 /* SYButton.m in Sources */,
 				A71ADE961C29486F0075AB73 /* AppDelegate.m in Sources */,
 				A71ADE931C29486F0075AB73 /* main.m in Sources */,

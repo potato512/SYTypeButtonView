@@ -62,8 +62,6 @@ static NSInteger const tagButton = 1000;
         [button setTitleColor:[UIColor orangeColor] forState:UIControlStateSelected];
         [button setTitle:title forState:UIControlStateNormal];
         button.frame = rect;
-//        [button setImage:kImageWithName(@"accessoryArrow_down") forState:UIControlStateNormal];
-//        [button setImage:kImageWithName(@"accessoryArrow_up") forState:UIControlStateSelected];
         
         button.userInteractionEnabled = YES;
         button.selected = NO;
@@ -74,11 +72,13 @@ static NSInteger const tagButton = 1000;
         [self addSubview:button];
     }
     
+    // 实始化选中第一个
     self.previousTag = tagButton + 0;
     SYButton *button = (SYButton *)[self viewWithTag:self.previousTag];
     button.userInteractionEnabled = NO;
     button.selected = YES;
     
+    // 滚动条
     self.lineView = [[UIView alloc] initWithFrame:CGRectMake(0.0, (CGRectGetHeight(self.bounds) - 1.0), width, 2.0)];
     [self addSubview:self.lineView];
     self.lineView.backgroundColor = [UIColor redColor];
@@ -250,8 +250,24 @@ static NSInteger const tagButton = 1000;
 {
     _selectedIndex = selectedIndex;
     
+    // 小于0时取消选中
+    if (_selectedIndex < 0)
+    {
+        for (SYButton *button in self.subviews)
+        {
+            if ([button isKindOfClass:[SYButton class]])
+            {
+                if (button.selected)
+                {
+                    button.selected = NO;
+                    button.userInteractionEnabled = YES;
+                }
+            }
+        }
+        return;
+    }
     SYButton *button = (SYButton *)[self viewWithTag:_selectedIndex + tagButton];
-    if (button)
+    if (button && [button isKindOfClass:[SYButton class]])
     {
         // 改变按钮状态，不响应交互事件
         [self buttonActionStatus:button];
@@ -268,7 +284,52 @@ static NSInteger const tagButton = 1000;
     }
     
     SYButton *button = (SYButton *)[self viewWithTag:index + tagButton];
-    [button setTitle:title forState:UIControlStateNormal];
+    if (button && [button isKindOfClass:[SYButton class]])
+    {
+        [button setTitle:title forState:UIControlStateNormal];
+    }
+}
+
+/// 设置某个按钮升序或降序状态
+- (void)setTypeButton:(BOOL)isDescending index:(NSInteger)index
+{
+    if (0 > index || (self.subviews.count - 1) <= index)
+    {
+        return;
+    }
+    
+    // 取消已选
+    for (SYButton *button in self.subviews)
+    {
+        if ([button isKindOfClass:[SYButton class]])
+        {
+            if (button.selected)
+            {
+                button.selected = NO;
+                button.userInteractionEnabled = YES;
+            }
+        }
+    }
+    //
+    SYButton *button = (SYButton *)[self viewWithTag:index + tagButton];
+    if (button && [button isKindOfClass:[SYButton class]])
+    {
+        NSString *title = button.titleLabel.text;
+        if ([self.enableTitles containsObject:title])
+        {
+            button.userInteractionEnabled = YES;
+            button.selected = YES;
+            self.isDescending = isDescending;
+            
+            NSDictionary *dict = _imageTypeArray[index];
+            UIImage *imageSelected = dict[keyImageSelected];
+            UIImage *imageSelectedDouble = dict[keyImageSelectedDouble];
+            [button setImage:(self.isDescending ? imageSelected : imageSelectedDouble) forState:UIControlStateSelected];
+            self.previousTitle = title;
+        }
+    }
+    //
+    [self buttonActionLine:button];
 }
 
 @end
