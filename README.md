@@ -1,9 +1,20 @@
 # SYTypeButtonView
 多样式类型按钮视图
 
-## 使用说明
+
+## 效果图
 
 ![gif](SYTypeButtonView.gif)
+
+
+
+* 使用介绍
+  * 自动导入：使用命令`pod 'SYTypeButtonView'`导入到项目中
+  * 手动导入：或下载源码后，将源码添加到项目中
+  
+  
+  
+## 使用说明
 
 ~~~ javaacript
 // 头文件
