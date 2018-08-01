@@ -4,7 +4,7 @@
 //
 //  Created by zhangshaoyu on 15/11/16.
 //  Copyright © 2015年 zhangshaoyu. All rights reserved.
-//  排序按钮视图 https://github.com/potato512/SYTypeButtonView
+//  https://github.com/potato512/SYTypeButtonView
 
 #import <UIKit/UIKit.h>
 
