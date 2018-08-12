@@ -15,8 +15,7 @@ static CGFloat const kScale = 0.8;
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
-    if (self)
-    {
+    if (self) {
         // 图片居中
         self.imageView.contentMode = UIViewContentModeCenter;
         // 文字居中
@@ -30,7 +29,7 @@ static CGFloat const kScale = 0.8;
 // 没有高亮状态
 - (void)setHighlighted:(BOOL)highlighted
 {
-//    highlighted = NO;
+
 }
 
 - (CGRect)imageRectForContentRect:(CGRect)contentRect

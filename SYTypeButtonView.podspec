@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SYTypeButtonView"
-  s.version      = "2.1.1"
+  s.version      = "2.1.2"
   s.summary      = "SYTypeButtonView used to show button view..."
   s.homepage     = "https://github.com/potato512/SYTypeButtonView"
   s.license      = { :type => "MIT", :file => "LICENSE" }

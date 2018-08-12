@@ -20,7 +20,7 @@ static NSString *const keyImageSelectedDouble = @"keyImageSelectedDouble";
 /// 实例化
 - (instancetype)initWithFrame:(CGRect)frame view:(UIView *)view;
 
-/// 是否显示切换滚动条（默认不显示。设置标题前设置）
+/// 是否显示切换滚动条（默认不显示。设置标题数组前设置）
 @property (nonatomic, assign) BOOL showScrollLine;
 /// 滚动条颜色（默认红色）
 @property (nonatomic, strong) UIColor *scrollLineColor;
@@ -38,16 +38,13 @@ static NSString *const keyImageSelectedDouble = @"keyImageSelectedDouble";
 @property (nonatomic, strong) UIColor *titleColorSelected;
 
 /// 按钮标题数组
-@property (nonatomic, strong) NSArray *titles;
-
-/// 选择状态颜色
-@property (nonatomic, strong) UIColor *colorSelected;
+@property (nonatomic, strong) NSArray <NSString *> *titles;
 
 /// 可重复操作的按钮标题（默认不能重复操作）
-@property (nonatomic, strong) NSArray *enableTitles;
+@property (nonatomic, strong) NSArray <NSString *> *enableTitles;
 
-/// 按钮图标类型（array - dict - normal+selected+selectedDouble）
-@property (nonatomic, strong) NSArray *imageTypeArray;
+/// 按钮图标类型（array - dict - normal+selected+selectedDouble => @[@{keyImageNormal:[UIImage imageNamed:@"xxx"], keyImageSelected:[UIImage imageNamed:@"xxx"], keyImageSelectedDouble:[UIImage imageNamed:@"xxx"]}, ..., @{keyImageNormal:[UIImage imageNamed:@"xxx"], keyImageSelected:[UIImage imageNamed:@"xxx"], keyImageSelectedDouble:[UIImage imageNamed:@"xxx"]}]）
+@property (nonatomic, strong) NSArray <NSDictionary *> *imageTypeArray;
 
 /// 回调响应（默认升序）
 @property (nonatomic, copy) void (^buttonClick)(NSInteger index, BOOL isDescending);
