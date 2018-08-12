@@ -21,8 +21,8 @@
 		A7CABE671F95F7B800A68017 /* priceImage_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CABE621F95F7B800A68017 /* priceImage_down@2x.png */; };
 		A7CABE681F95F7B800A68017 /* priceImage_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CABE631F95F7B800A68017 /* priceImage_normal@2x.png */; };
 		A7CABE691F95F7B800A68017 /* priceImage_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CABE641F95F7B800A68017 /* priceImage_up@2x.png */; };
-		A7CABE6E1F95F8DE00A68017 /* SYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CABE6B1F95F8DE00A68017 /* SYButton.m */; };
-		A7CABE6F1F95F8DE00A68017 /* SYTypeButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CABE6D1F95F8DE00A68017 /* SYTypeButtonView.m */; };
+		DF5F0DED2120834F003CF15F /* SYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F0DEA2120834F003CF15F /* SYButton.m */; };
+		DF5F0DEE2120834F003CF15F /* SYTypeButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F0DEC2120834F003CF15F /* SYTypeButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +66,10 @@
 		A7CABE621F95F7B800A68017 /* priceImage_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "priceImage_down@2x.png"; sourceTree = "<group>"; };
 		A7CABE631F95F7B800A68017 /* priceImage_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "priceImage_normal@2x.png"; sourceTree = "<group>"; };
 		A7CABE641F95F7B800A68017 /* priceImage_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "priceImage_up@2x.png"; sourceTree = "<group>"; };
-		A7CABE6A1F95F8DE00A68017 /* SYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYButton.h; sourceTree = "<group>"; };
-		A7CABE6B1F95F8DE00A68017 /* SYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYButton.m; sourceTree = "<group>"; };
-		A7CABE6C1F95F8DE00A68017 /* SYTypeButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTypeButtonView.h; sourceTree = "<group>"; };
-		A7CABE6D1F95F8DE00A68017 /* SYTypeButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTypeButtonView.m; sourceTree = "<group>"; };
+		DF5F0DE92120834F003CF15F /* SYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYButton.h; sourceTree = "<group>"; };
+		DF5F0DEA2120834F003CF15F /* SYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYButton.m; sourceTree = "<group>"; };
+		DF5F0DEB2120834F003CF15F /* SYTypeButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTypeButtonView.h; sourceTree = "<group>"; };
+		DF5F0DEC2120834F003CF15F /* SYTypeButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTypeButtonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 				A76762861FF5DF590019F508 /* RootViewController.m */,
 				A71ADE971C29486F0075AB73 /* ViewController.h */,
 				A71ADE981C29486F0075AB73 /* ViewController.m */,
+				DF5F0DE82120834F003CF15F /* SYTypeButtonView */,
 				A7CABE5F1F95F7B800A68017 /* images */,
-				A7CABE5E1F95F7B300A68017 /* SYTypeButtonView */,
 				A71ADE911C29486F0075AB73 /* Supporting Files */,
 			);
 			path = DemoTypeButton;
@@ -163,17 +163,6 @@
 			path = DemoTypeButtonUITests;
 			sourceTree = "<group>";
 		};
-		A7CABE5E1F95F7B300A68017 /* SYTypeButtonView */ = {
-			isa = PBXGroup;
-			children = (
-				A7CABE6A1F95F8DE00A68017 /* SYButton.h */,
-				A7CABE6B1F95F8DE00A68017 /* SYButton.m */,
-				A7CABE6C1F95F8DE00A68017 /* SYTypeButtonView.h */,
-				A7CABE6D1F95F8DE00A68017 /* SYTypeButtonView.m */,
-			);
-			path = SYTypeButtonView;
-			sourceTree = "<group>";
-		};
 		A7CABE5F1F95F7B800A68017 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +173,18 @@
 				A7CABE641F95F7B800A68017 /* priceImage_up@2x.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		DF5F0DE82120834F003CF15F /* SYTypeButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				DF5F0DE92120834F003CF15F /* SYButton.h */,
+				DF5F0DEA2120834F003CF15F /* SYButton.m */,
+				DF5F0DEB2120834F003CF15F /* SYTypeButtonView.h */,
+				DF5F0DEC2120834F003CF15F /* SYTypeButtonView.m */,
+			);
+			name = SYTypeButtonView;
+			path = ../../SYTypeButtonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +254,7 @@
 				TargetAttributes = {
 					A71ADE8D1C29486F0075AB73 = {
 						CreatedOnToolsVersion = 7.1.1;
+						ProvisioningStyle = Manual;
 					};
 					A71ADEA61C29486F0075AB73 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -321,10 +323,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7CABE6F1F95F8DE00A68017 /* SYTypeButtonView.m in Sources */,
+				DF5F0DEE2120834F003CF15F /* SYTypeButtonView.m in Sources */,
 				A71ADE991C29486F0075AB73 /* ViewController.m in Sources */,
+				DF5F0DED2120834F003CF15F /* SYButton.m in Sources */,
 				A76762871FF5DF590019F508 /* RootViewController.m in Sources */,
-				A7CABE6E1F95F8DE00A68017 /* SYButton.m in Sources */,
 				A71ADE961C29486F0075AB73 /* AppDelegate.m in Sources */,
 				A71ADE931C29486F0075AB73 /* main.m in Sources */,
 			);
@@ -465,11 +467,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DemoTypeButton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zsy.DemoTypeButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -477,11 +482,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DemoTypeButton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zsy.DemoTypeButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
