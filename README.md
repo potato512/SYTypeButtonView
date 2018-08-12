@@ -16,37 +16,75 @@
   
 ## 使用说明
 
-~~~ javaacript
-// 头文件
-#import "SYTypeButtonView.h"
 
-// 实例化
+头文件
+```
+#import "SYTypeButtonView.h"
+```
+
+实例化
+```
 SYTypeButtonView *buttonView = [[SYTypeButtonView alloc] initWithFrame:CGRectMake(0.0, 0.0, CGRectGetWidth(self.view.bounds), heightTypeButtonView) view:self.view];
-buttonView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.3];
+```
+
+响应回调
+```
 buttonView.buttonClick = ^(NSInteger index, BOOL isDescending){
     NSLog(@"click index %ld, isDescending %d", index, isDescending);
 };
+```
+
+字体大小
+```
+buttonView.titleFont = [UIFont systemFontOfSize:13.0f];
+buttonView.titleFontSelected = [UIFont systemFontOfSize:15.0f];
+```
+
+字体颜色
+```
+buttonView.titleColorNormal = [UIColor blackColor];
+buttonView.titleColorSelected = [UIColor greenColor];
+```
+
+显示滚动条
+```
+buttonView.showScrollLine = YES;
+buttonView.scrollLineColor = [UIColor greenColor];
+buttonView.adjustScrollLineWidth = YES;
+```
+
+标题数组、图标数组等属性
+```
 buttonView.titles = @[@"综合", @"销量", @"价格"];
 buttonView.enableTitles = @[@"价格"];
-buttonView.colorNormal = [UIColor blackColor];
-buttonView.colorSelected = [UIColor redColor];
 buttonView.imageTypeArray = @[[NSDictionary dictionary],
 [NSDictionary dictionaryWithObjectsAndKeys:[UIImage imageNamed:@"accessoryArrow_down"], keyImageNormal, [UIImage imageNamed:@"accessoryArrow_downSelected"], keyImageSelected, nil],
 [NSDictionary dictionaryWithObjectsAndKeys:[UIImage imageNamed:@"priceImage_normal"], keyImageNormal, [UIImage imageNamed:@"priceImage_down"], keyImageSelected, [UIImage imageNamed:@"priceImage_up"], keyImageSelectedDouble, nil]];
+```
 
-// 显示滚动条
-buttonView.showScrollLine = YES;
-
-// 设置默认选中按钮
+设置默认选中按钮
+```
 buttonView.selectedIndex = 2;
+```
 
-// 设置默认选中按钮及其状态
+设置默认选中按钮及其状态
+```
 [buttonView setTypeButton:NO index:2];
-
-
-~~~
+```
 
 # 修改说明
+* 20180812
+  * 版本号：2.1.0
+  * 修改完善
+    * 自定义滚动条颜色
+    * 数组存储取按钮
+    * 滚动条适应标题宽度
+      * 字典缓存宽度，避免多次计算
+    
+* 20180801
+  * 版本号：2.0.1
+  * 修改完善
+  
 * 20171229
   * 版本号：2.0.0
   * 完善逻辑
