@@ -11,8 +11,11 @@
 /// 默认行高
 static CGFloat const heightTypeButtonView = 40.0f;
 
+/// 常规按钮key
 static NSString *const keyImageNormal         = @"keyImageNormal";
+/// 第一图标 高亮及选中按钮key
 static NSString *const keyImageSelected       = @"keyImageSelected";
+/// 第二图标 高亮及选中按钮key
 static NSString *const keyImageSelectedDouble = @"keyImageSelectedDouble";
 
 @interface SYTypeButtonView : UIView
